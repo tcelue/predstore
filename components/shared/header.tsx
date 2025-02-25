@@ -18,7 +18,7 @@ const mockCategories = [
 ];
 
 export default function Header() {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [categories, setCategories] = useState(mockCategories); // Using mock data for now
   const router = useRouter();
