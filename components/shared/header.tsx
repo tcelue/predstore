@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
+import {  onAuthStateChanged, signOut } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
 import { Menu } from 'lucide-react';
 
