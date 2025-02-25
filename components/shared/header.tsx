@@ -51,7 +51,7 @@ export default function Header() {
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Site Name */}
-        <Link href="/" className="text-2xl font-bold text-gray-700">MySite</Link>
+        <Link href="/" className="text-2xl font-bold text-gray-700">天策预测市场</Link>
         
         {/* Hamburger Menu (for small screens) */}
         <div className="md:hidden">
