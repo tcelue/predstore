@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import {  onAuthStateChanged, signOut } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
 import { Menu } from 'lucide-react';
+import { User } from "firebase/auth"; // Import Firebase User type
 
 // Mock categories data (to be replaced with Firestore data in the future)
 const mockCategories = [
@@ -18,7 +19,8 @@ const mockCategories = [
 ];
 
 export default function Header() {
-  const [user, setUser] = useState(null);
+  // const [user, setUser] = useState(null);
+  const [user, setUser] = useState<User | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [categories, setCategories] = useState(mockCategories); // Using mock data for now
   const router = useRouter();
