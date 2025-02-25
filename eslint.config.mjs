@@ -17,6 +17,7 @@ const eslintConfig = [
       "@typescript-eslint/no-unused-vars": "off", // Allow unused variables
       "@typescript-eslint/no-unused-expressions": "off", // Allow unused expressions
       "no-unused-vars": "off", // Disable the base rule as well
+      "@typescript-eslint/no-unnecessary-type-assertion": "off"
     },
   },
 ];
